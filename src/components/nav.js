@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import { Link } from 'react-router-dom';
 
 class Nav extends Component {
 
@@ -9,14 +9,19 @@ render(){
         <div>
             <nav className="main-nav">
                 <ul className="main-nav__list">
-                    <li className="main-nav__item"><a href="#">home</a></li>
-                    <li className="main-nav__item"><a href="#">all tournaments</a></li>
+                    <li className="main-nav__item">
+                        <Link to="/">Home</Link>
+                    </li>
+                    <li className="main-nav__item">
+                        <Link to="/tournaments">All Tournaments</Link>
+                    </li>
+                    <li className="main-nav__item">
+                        <Link to="/create">Create a new Tournament</Link>
+                    </li>
                 </ul>
             </nav>
         </div>
     )
-
-    
 }
 
 }

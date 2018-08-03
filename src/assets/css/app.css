@@ -42,8 +42,10 @@ body {
     }
 }
 
-
 .page-header {
+
+}
+.page-header__masthead {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,6 +60,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 .main-nav__list{
     list-style-type: none;

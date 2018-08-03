@@ -6,9 +6,11 @@ import corgi from '../assets/images/corgi-sm.gif';
 
 export default props => {
     return (<header className="page-header">
+        <div className="page-header__masthead">
+            <img className="page-header__image" src={corgi} alt="" />
+            WoW Pet Battle Brackets
+            <img className="page-header__image" src={perky} alt="" />
+        </div>
         <Nav />
-        <img className="page-header__image" src={corgi} alt="" />
-        WoW Pet Battle Brackets
-        <img className="page-header__image" src={perky} alt="" />
     </header>)
 }
