@@ -41,3 +41,29 @@ body {
         transform: rotate(360deg);
     }
 }
+
+
+.page-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+.page-header__image {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-nav__list{
+    list-style-type: none;
+    padding: 0;
+    display: inline-block;
+}
+.main-nav__item {
+
+}
