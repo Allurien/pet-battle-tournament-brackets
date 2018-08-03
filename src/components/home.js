@@ -21,7 +21,10 @@ class Home extends Component {
 
     render() {
         const petsArr = this.state.pets.map(pet => {
-            return <li key={pet.creatureId}>{pet.name}</li>
+            return <li key={pet.creatureId}>
+                <img src={'https://wow.zamimg.com/images/wow/icons/large/' + pet.icon +'.jpg'} alt={pet.name} />
+                {pet.name}
+            </li>
         });
         return (
             <ul>
