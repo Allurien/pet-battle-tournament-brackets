@@ -52,14 +52,19 @@ body {
     align-items: center;
     align-content: center;
     height: 70%;
+    margin-top: 2%;
 }
 .bracket__pair__paragraph {
     margin-bottom: 0;
 }
 .bracket__winner{
-    align-items: center;
     border-bottom: 2px solid black;
     width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    align-items: center;
+    height: 50%;
 }
 .bracket__finals{
     display: flex;
@@ -113,8 +118,8 @@ body {
     border-bottom: 2px solid black;
     box-sizing: border-box;
     width: 100%;
-    height: 25%;
-    margin-top: 10%;
+    height: 50%;
+    margin-top: -10%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -160,4 +165,64 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+}
+.petTeam {
+    height: 100%;
+}
+.petTeam__title {
+    font-size: 2.5vmin;
+    margin: 0;
+    margin-bottom: 1%;
+    order: 1;
+}
+.petTeam__winner {
+    height: 100%;
+    width: 100%;
+    margin-bottom: -10%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.petTeam__winner__icons {
+    height: 25%;
+    width: auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 5%;
+}
+.petTeam__finals {
+    height: 100%;
+    margin-bottom: -10%;
+}
+.petTeam__finals__bottom-item {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -10%;
+}
+.petTeam__finals__icons {
+    height: 50%;
+    width: auto;
+    display: flex;
+    justify-content: space-evenly;
+    order: 2;
+}
+.petTeam__semiFinals {
+    height: 100%;
+    margin-bottom: -10%;
+}
+.petTeam__semiFinals__icons {
+    height: 50%;
+    width: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.petTeam__quarterFinals__icons {
+    height: 50%;
+    width: auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 5%;
+}
+.petTeam__icons__image {
+    max-height: 100%;
 }
