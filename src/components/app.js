@@ -8,15 +8,17 @@ import Header from './header';
 import Home from './home';
 import ListTournaments from './listTournaments';
 import CreateTournament from './createTournament';
+import Bracket from './bracket';
 
 const App = () => (
-    <div>
-        <div className="app">
+    <div  className="container">
+        <div>
             <Header />
         </div>
         <Route exact path="/" component={Home} />
         <Route exact path="/create" component={CreateTournament} />
         <Route exact path="/tournaments" component={ListTournaments} />
+        <Route exact path="/bracket" component={Bracket} />
     </div>
 );
 

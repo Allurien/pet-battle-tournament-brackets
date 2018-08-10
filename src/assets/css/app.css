@@ -1,59 +1,27 @@
-@font-face {
-    font-family: quest;
-    src: url(../fonts/quest.ttf);
-}
-
 body {
     margin: 0;
 }
-
-.app {
-    background-color: #fff;
-    color: #000;
-    font-family: quest;
-    font-size: 30px;
-    padding: 50px;
-    text-align: center;
+.container {
+    width: 100vw;
+    height: 100vh;
 }
-
-.app .logo {
-    height: 220px;
-    filter: drop-shadow(2px 2px 0px #FFF);
-}
-
-.app h1 {
-    color: #61DAFB;
-    font-size: 5em;
-    letter-spacing: 5px;
-    margin: 0.16em;
-    text-shadow: 2px 2px 0 #FFF;
-}
-
-.rotate {
-    animation: spin 10s linear infinite;
-}
-
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
 .page-header {
-
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
 }
 .page-header__masthead {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.5em;
+    height: 80%;
 }
 .page-header__image {
     margin-left: 1em;
     margin-right: 1em;
+    max-height: 100%;
+    max-width: 100%;
 }
 
 .main-nav {
@@ -61,12 +29,135 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 20%;
 }
 .main-nav__list{
     list-style-type: none;
     padding: 0;
-    display: inline-block;
+    display: inline-flex;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
 }
 .main-nav__item {
-
+    display: inline-block;
+}
+/* Bracket Classes */
+.bracket {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    height: 70%;
+}
+.bracket__pair__paragraph {
+    margin-bottom: 0;
+}
+.bracket__winner{
+    align-items: center;
+    border-bottom: 2px solid black;
+    width: 25%;
+}
+.bracket__finals{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+}
+.bracket__finals__pair{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.bracket__finals__pair__top-item{
+    width: 100%;
+    height: 25%;
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid black;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 10%;
+}
+.bracket__finals__pair__bottom-item{
+    width: 100%;
+    height: 50%;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.bracket__semiFinals{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    align-items: center;
+    height: 100%;
+}
+.bracket__semiFinals__pair{
+    width: 100%;
+    height: 50%;
+}
+.bracket__semiFinals__pair__top-item{
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid black;
+    box-sizing: border-box;
+    width: 100%;
+    height: 25%;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.bracket__semiFinals__pair__bottom-item{
+    width: 100%;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    box-sizing: border-box;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.bracket__quarterFinals{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 25%;
+    height: 100%;
+}
+.bracket__quarterFinals__pair{
+    width: 100%;
+    height: 25%;
+}
+.bracket__quarterFinals__pair__top-item{
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid black;
+    box-sizing: border-box;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.bracket__quarterFinals__pair__bottom-item{
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    box-sizing: border-box;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
