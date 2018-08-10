@@ -6,7 +6,6 @@ class Nav extends Component {
 
 render(){
     return(
-        <div>
             <nav className="main-nav">
                 <ul className="main-nav__list">
                     <li className="main-nav__item">
@@ -20,7 +19,6 @@ render(){
                     </li>
                 </ul>
             </nav>
-        </div>
     )
 }
 

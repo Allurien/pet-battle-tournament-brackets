@@ -16,6 +16,7 @@ class Home extends Component {
                 this.setState({
                     pets: pets.pets
                 })
+                console.log(this.state.pets);
             });
     }
 
