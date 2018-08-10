@@ -1,14 +1,16 @@
 import React from 'react';
-import sunfur from '../assets/images/sunfurPanda.jpg';
-import seaPony from '../assets/images/seaPony.jpg';
-import drake from '../assets/images/drake.jpg';
+import dummyPets from './dummyPets';
 
 
 export default props =>{
-    const team = [sunfur, seaPony, drake];
     return(
-        <div>
-            
+        <div className={props.teamClass}>
+            <p className="petTeam__title">Pet Team Name</p>
+            <div className={props.iconClass}>
+                <img className="petTeam__icons__image" src={`https://wow.zamimg.com/images/wow/icons/large/${dummyPets.bronzeDrake.icon}.jpg`}/>
+                <img className="petTeam__icons__image" src={`https://wow.zamimg.com/images/wow/icons/large/${dummyPets.seaPony.icon}.jpg`}/>
+                <img className="petTeam__icons__image" src={`https://wow.zamimg.com/images/wow/icons/large/${dummyPets.sunfurPanda.icon}.jpg`}/>
+            </div>
         </div>
     );
 }
